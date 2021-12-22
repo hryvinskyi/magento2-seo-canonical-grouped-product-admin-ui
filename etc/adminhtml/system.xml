@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2021. All rights reserved.
+  ~ @author: Volodymyr Hryvinskyi <mailto:volodymyr@hryvinskyi.com>
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="hryvinskyi_seo">
+            <group id="canonical">
+                <field id="associated_canonical_grouped_product" translate="label" type="select" sortOrder="145"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Associated Products Canonical Tag for Grouped Products</label>
+                    <source_model>Hryvinskyi\SeoCanonicalAdminUi\Model\Config\Source\AssociatedCanonicalProduct</source_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
